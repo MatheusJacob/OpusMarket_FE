@@ -9,7 +9,7 @@ before_install:
 install:
   - npm install
 script:
-  - npm run build
+  - CI='' npm run build
   - npm run build:docker
 deploy:
   - provider: script
